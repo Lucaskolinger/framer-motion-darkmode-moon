@@ -4,11 +4,12 @@ import lightImage from "./assets/light.svg";
 import { useState } from "react";
 
 function App() {
-  const [isDarkmode, switchIsDarkmode] = useState(true);
+  const [isDarkmode, setIsDarkmode] = useState(false);
 
   return (
     <div>
-      <Moon />
+      <Moon onSwitchMode={() => setIsDarkmode(!isDarkmode)} />
+
       {isDarkmode ? (
         <img className="bg-image" src={darkImage} alt="" />
       ) : (

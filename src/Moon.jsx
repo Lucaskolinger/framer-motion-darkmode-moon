@@ -1,16 +1,12 @@
 import { motion } from "framer-motion";
 
-export default function Moon() {
+export default function Moon({ onSwitchMode }) {
   const logoWidth = 4; //in rem
   const logoMarginTop = 6; //in rem
   const logoLineWidth = 1; //in px
   const lineHeight = logoWidth * 8 + logoMarginTop;
   const strokeWidth = "1.77px";
   const strokeColor = "white";
-
-  const switchTheme = () => {
-    console.log("switching");
-  };
 
   return (
     <motion.div
@@ -32,7 +28,7 @@ export default function Moon() {
       dragElastic={0.3}
       onDragEnd={(e, i) => {
         if (i.offset.y > 5) {
-          switchTheme();
+          onSwitchMode();
         }
       }}
     >
