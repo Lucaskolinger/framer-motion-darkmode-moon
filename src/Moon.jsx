@@ -6,7 +6,7 @@ export default function Moon({ onSwitchMode }) {
   const logoLineWidth = 1; //in px
   const lineHeight = logoWidth * 8 + logoMarginTop;
   const strokeWidth = "1.77px";
-  const strokeColor = "white";
+  const lineColor = "hsla(0,0%,100%,0.75 )";
 
   return (
     <motion.div
@@ -38,7 +38,7 @@ export default function Moon({ onSwitchMode }) {
           height: lineHeight + "rem",
           width: logoLineWidth + "px",
           transform: "translateY(-" + lineHeight + "rem)",
-          backgroundColor: strokeColor,
+          backgroundColor: lineColor,
           position: "absolute",
           left: "0",
           right: "0",
