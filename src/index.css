@@ -21,13 +21,26 @@ body {
   width: 100%;
 }
 
-.copyright-icon {
+.icon {
   width: 1.5rem;
   position: fixed;
-  left: 1.5rem;
   bottom: 1.5rem;
   color: hsla(0, 0%, 100%, 0.757);
   cursor: pointer;
+  transition: transform 350ms ease-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.copyright-icon {
+  left: 1.5rem;
+}
+
+.github-icon {
+  right: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.9);
 }
 
 .copyright-tooltip {
