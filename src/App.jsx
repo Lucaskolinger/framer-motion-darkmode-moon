@@ -34,7 +34,10 @@ function App() {
           <path d="M15 9.354a4 4 0 1 0 0 5.292" />
         </g>
       </svg>
-      <a href="https://github.com/Lucaskolinger/framer-motion-darkmode-moon">
+      <a
+        href="https://github.com/Lucaskolinger/framer-motion-darkmode-moon"
+        target="_blank"
+      >
         <svg
           className="github-icon icon"
           xmlns="http://www.w3.org/2000/svg"
