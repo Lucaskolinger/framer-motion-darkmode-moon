@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -14,11 +15,9 @@ body {
 
 .bg-image {
   height: 100vh;
+  width: 100vw;
+  object-fit: cover;
   margin-top: 0.3rem;
-}
-
-.moon-svg {
-  width: 100%;
 }
 
 .icon {
@@ -32,6 +31,7 @@ body {
 
 .icon:hover {
   transform: scale(1.1);
+  color: hsl(0, 0%, 100%);
 }
 
 .copyright-icon {

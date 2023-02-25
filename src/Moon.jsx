@@ -46,7 +46,6 @@ export default function Moon({ onSwitchMode }) {
         }}
       ></div>
       <svg
-        className="moon-svg"
         width={logoWidth + "rem"}
         viewBox="0 0 812.8125 907.5"
         style={{

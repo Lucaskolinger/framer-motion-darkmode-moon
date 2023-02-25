@@ -1,21 +1,31 @@
 import Moon from "./Moon";
-import darkImage from "./assets/dark.svg";
-import lightImage from "./assets/light.svg";
+import darkImageSource from "./assets/dark.svg";
+import lightImageSource from "./assets/light.svg";
 import { useState } from "react";
 
 function App() {
   const [isDarkmode, setIsDarkmode] = useState(false);
   const [showCopyright, setShowCopyright] = useState(false);
+  const darkImage = (
+    <img
+      className="bg-image"
+      src={darkImageSource}
+      alt="darkmode background image"
+    />
+  );
+  const lightImage = (
+    <img
+      className="bg-image"
+      src={lightImageSource}
+      alt="darkmode background image"
+    />
+  );
 
   return (
     <div>
       <Moon onSwitchMode={() => setIsDarkmode(!isDarkmode)} />
 
-      {isDarkmode ? (
-        <img className="bg-image" src={darkImage} alt="" />
-      ) : (
-        <img className="bg-image" src={lightImage} alt="" />
-      )}
+      {isDarkmode ? darkImage : lightImage}
 
       {showCopyright && (
         <div className="copyright-tooltip">
